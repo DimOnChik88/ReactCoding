@@ -34,12 +34,11 @@ class AllRepo extends Component {
             <div className='w100'>
                 <form className='flex row jc_between filter_block'>
                     <input type="text" ref={this.input_filter} onInput={this.onInputFilter}
-                           placeholder='Find a repository...' className='w70'/>
+                           placeholder='Find a repository...' className='w70' data-testid='filter_input'/>
                     <div className='flex row jc_between w24'>
                         <select className='w70 text_center' ref={this.language_select} onChange={this.onInputFilter}>
-                            <option disabled selected>Languages</option>
+                            <option value=''>Language: All</option>
                             <option value='JavaScript'>JavaScript</option>
-                            <option value=''>All</option>
                             <option value='Python'>Python</option>
                             <option value='Go'>Go</option>
                             <option value='C'>C</option>
