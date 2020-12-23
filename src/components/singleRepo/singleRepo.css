@@ -1,0 +1,52 @@
+.repo {
+    padding: 24px 0;
+    height: 175px;
+    border-bottom: 1px solid #EAECEF;
+    color: #82888E;
+}
+
+.title {
+    font-size: 20px;
+    color: #0366D6;
+    margin-top: 10px;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.topic {
+    font-size: 12px;
+    border-radius: 2em;
+    background: #F1F8FF;
+    color: #299CEF;
+    padding: 4px !important;
+    margin: 20px 10px 20px 0;
+}
+
+.JavaScript {
+    background: #ffff56;
+}
+
+.Go{
+    background: #0366D6;
+}
+
+.Python{
+    background: saddlebrown;
+}
+
+.C{
+    background: darkgreen;
+}
+
+.round {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}

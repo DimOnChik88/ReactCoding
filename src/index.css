@@ -1,13 +1,135 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    line-height: 1.5;
+    color: black;
+}
+
+button {
+    background: #FAFBFC;
+    margin: 25px 0;
+    border-radius: 5px;
+    height: 32px;
+    box-shadow: none;
+    border: 1px solid #D9DBDB;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a, a:visited {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.black {
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+    word-wrap: normal;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.list_none {
+    list-style: none;
+}
+
+.jc_around {
+    justify-content: space-around;
+}
+
+.jc_between {
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #24292e;
+    padding: 8px 0;
+    color: white;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 1200px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w55 {
+    width: 55%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w35 {
+    width: 35%;
+}
+.w30 {
+    width: 30%;
+}
+
+.w24 {
+    width: 24%;
+}
+
+.w40 {
+    width: 40%;
+}
+.w45 {
+    width: 45%;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+.mr10{
+    margin-right: 10px;
+}
+
+.fs12{
+    font-size: 12px;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.item_center {
+    align-items: center;
+}
+.item_baseline{
+    align-items: baseline;
+}
+
+select {
+    background: #FAFBFC;
+    border-radius: 5px;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    box-shadow: none;
 }

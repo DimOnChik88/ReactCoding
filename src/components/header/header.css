@@ -1,0 +1,63 @@
+
+.cat_logo {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.nav_menu {
+    width: 540px;
+}
+
+.nav_menu li {
+    transition: opacity .5s;
+}
+
+.nav_menu li:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.right_block {
+    width: 390px;
+}
+
+.header_input {
+    background-color: #24292e;
+    border: 0;
+    color: white;
+    padding: 5px;
+    height: 28px;
+    border-radius: 5px;
+}
+
+.header_input:focus {
+    background: white;
+    color: black;
+}
+
+.sign_up {
+    border: 1px solid white;
+    border-radius: 10%;
+    text-align: center;
+    padding: 5px;
+}
+
+.input_icon {
+    position: absolute;
+    padding-left: 210px;
+    opacity: 50%;
+}
+
+.sign_block {
+    transition: opacity .5s;
+}
+
+.sign_block span:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.sign_up:hover {
+    opacity: 70%;
+    cursor: pointer;
+}

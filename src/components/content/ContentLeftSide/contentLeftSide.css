@@ -1,0 +1,68 @@
+.avatar {
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+    z-index: 4;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.content_left {
+    padding: 0 15px;
+    position: relative;
+    top: -35px;
+}
+
+.nick_name {
+    font-size: 26px;
+    line-height: 1.25;
+}
+
+.sub_name {
+    font-size: 20px;
+    color: #5B6069;
+}
+
+.dots {
+    color: #5B6069;
+}
+
+.follow {
+    color: #5B6069;
+}
+
+.follow a .bold {
+    font-weight: 600;
+    color: black;
+}
+
+.follow a:hover {
+    color: blue !important;
+}
+
+.contacts {
+    padding: 20px 0;
+    border-bottom: 1px solid #EAECEF;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+.highlights {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EAECEF;
+}
+
+.pro {
+    border-radius: 12px;
+    padding: 5px 3px 2px 3px;
+    border: 1px solid #5B6069;
+    margin-left: 5px;
+}
+.organization_ico {
+    width: 32px;
+    height: auto;
+    border-radius: 10px;
+    margin: 4px;
+}
