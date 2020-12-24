@@ -41,7 +41,6 @@ class NavMenu extends Component {
         );
     }
     onMenuChose (element) {
-        console.log(element);
         for (let child of document.getElementById('menu').children) {
             child.classList.remove('active')
         }

@@ -31,7 +31,7 @@ export default function SingleRepo(props) {
                     </div>
                     <div className='flex row item_baseline mr10'>
                         <i className='fa fa-balance-scale'/>
-                        {item.license && <span> {item.license.name}</span>}
+                         {item.license && <span> {item.license.name}</span>}
                     </div>
                     <div className='flex row item_baseline mr10'>
                         <span>{item.open_issues_count} issues need help</span>

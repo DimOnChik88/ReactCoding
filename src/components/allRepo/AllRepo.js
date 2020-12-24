@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import {RepositoryService} from "../../service/repository.service";
 import SingleRepo from "../singleRepo/SingleRepo";
+import Pagination from "../pagination/Pagination";
 
 class AllRepo extends Component {
     state = {
         repo: [],
         use_filter: false,
-        filtered: []
+        filtered: [],
+        current_page: 1,
+        repo_pre_page: 5
     }
     input_filter = React.createRef();
     language_select = React.createRef();
@@ -16,11 +19,14 @@ class AllRepo extends Component {
         const {repo} = this.state
         const search = this.input_filter.current.value
         const language_select = this.language_select.current.value
-        console.log(language_select);
-        console.log(search);
         let filtered = repo.filter(item => item.name.includes(search))
         filtered = language_select ? filtered.filter(item => item.language === language_select) : filtered
-        this.setState({filtered, use_filter:true})
+        this.setState({filtered, use_filter: true, current_page: 1})
+    }
+
+    paginate = page => {
+        console.log(page);
+        this.setState({current_page: page});
     }
 
     async componentDidMount() {
@@ -29,7 +35,12 @@ class AllRepo extends Component {
     }
 
     render() {
-        const {repo, use_filter, filtered} = this.state;
+        const {repo, use_filter, filtered, current_page, repo_pre_page} = this.state;
+        // Get current repo
+        const total_repo = use_filter ? filtered : repo;
+        const index_of_last_repo = current_page * repo_pre_page;
+        const index_of_first_repo = index_of_last_repo - repo_pre_page;
+        const repo_to_show = total_repo.slice(index_of_first_repo, index_of_last_repo)
         return (
             <div className='w100'>
                 <form className='flex row jc_between filter_block'>
@@ -46,9 +57,9 @@ class AllRepo extends Component {
                     </div>
                 </form>
                 {
-                  !use_filter && repo.map((item, index) => <SingleRepo item={item} key={index}/>)
+                    repo_to_show.map((item, index) => <SingleRepo item={item} key={index}/>)
                 }
-                { use_filter && filtered.map((item, index) => <SingleRepo item={item} key={index}/>)}
+                <Pagination paginate={this.paginate} repo_pre_page={repo_pre_page} total_repo={total_repo} current_page={current_page}/>
             </div>
         );
     }

@@ -133,3 +133,21 @@ select{
     text-overflow: '';
     box-shadow: none;
 }
+.logo{
+    width: 24px;
+    height: auto;
+}
+.footer_nav{
+    color: #299CEF;
+}
+.footer_nav:hover{
+    text-decoration: underline;
+}
+
+.grey{
+    color: #82888E;
+}
+.footer{
+    padding-top: 20px;
+    border-top: 1px solid #EAECEF;
+}

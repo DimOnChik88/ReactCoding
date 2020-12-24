@@ -1,24 +1,33 @@
-.content_menu{
+.content_menu {
     margin-top: 24px;
     height: 48px;
     background: white;
     border-bottom: 1px solid #EAECEF;
 }
-.content_menu_item{
+
+.content_menu_item {
     margin-right: 20px;
 }
-.item_ico{
+
+.content_menu_item:hover {
+    cursor: pointer;
+}
+
+.item_ico {
     margin-right: 10px;
 }
-.stick{
+
+.stick {
     position: fixed;
     top: 0;
     z-index: 3;
     margin-top: 0;
 }
-.stick + .content{
-    padding: 90px;
+
+.stick + .content {
+    padding-top: 90px;
 }
+
 .active {
     border-bottom: 2px solid #F9826C;
     height: 33px;
